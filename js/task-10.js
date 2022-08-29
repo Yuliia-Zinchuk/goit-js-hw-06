@@ -39,5 +39,5 @@ buttonDestroy.addEventListener("click", () => {
 
 function destroyBoxes() {
   div.innerHTML = "";
-  input.innerHTML = "";
+  input.value = "";
 }
