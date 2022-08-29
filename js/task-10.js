@@ -9,7 +9,7 @@ const buttonCreate = document.querySelector("button[data-create]");
 const buttonDestroy = document.querySelector("button[data-destroy]");
 const input = document.querySelector("input");
 
-const divArray = [];
+let divArray = [];
 
 buttonCreate.addEventListener("click", () => {
   createBoxes(Number(input.value));
@@ -40,4 +40,5 @@ buttonDestroy.addEventListener("click", () => {
 function destroyBoxes() {
   div.innerHTML = "";
   input.value = "";
+  divArray = [];
 }
